@@ -42,11 +42,9 @@ export class Manager extends Person {
         }
     }
     payAllEmployee(date) {
-        let datePay = getDate(date);
+        
         this._listOfSubordinates.map((employee)=>{
-            
-            employee._paidSalaries.push([`${datePay} ${employee.salary}`]);
-            this._paidSalaries.push([`${datePay} ${employee.salary} ${employee.firtsName} ${employee.lastName}`]);
+           this.payOneEmployee(date,employee)
         });
         
     }
