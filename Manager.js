@@ -58,7 +58,7 @@ export class Manager extends Person {
         }
         else {
             employee._paidSalaries.push([`${datePay} ${employee.salary}`]);
-            this._paidSalaries.push([getDate(date),employee.salary,employee.salary]);
+            this._paidSalaries.push(datePay,employee.salary,employee.salary]);
             console.log(`Сотруднику ${employee.firtsName} выплачено ${employee.salary}` )
         }
         
