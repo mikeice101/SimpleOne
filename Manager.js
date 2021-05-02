@@ -29,6 +29,7 @@ export class Manager extends Person {
     addEmployee(employee) {
         this._listOfSubordinates.push(employee);
         console.log(`Сотрудник: ${employee.firtsName} ${employee.lastName} добавлен`);
+        employee.addManager= `${this.firtsName} ${this.lastName}`;
     }
     removeEmployee(employee) {
         let indexEmployee =  this._listOfSubordinates.indexOf(employee);
